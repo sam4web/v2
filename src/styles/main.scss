@@ -1,0 +1,22 @@
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+// utils import
+@import './utils/_responsive_mixins';
+@import './utils/_mixins';
+@import './utils/_colors';
+
+// common styles
+@import './common/_base';
+@import './common/_section';
+@import './common/_button';
+@import './common/_back_to_top';
+
+// components
+@import './components/_header';
+@import './components/_footer';
+@import './components/_hero';
+@import './components/_about';
+@import './components/_service';
+@import './components/_portfolio';
+@import './components/_contact';

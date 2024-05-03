@@ -1,0 +1,158 @@
+.about {
+  background-color: $section-grey;
+
+  .content-container {
+    @include grid(60px);
+    grid-template-columns: repeat(2, 1fr);
+    margin: 50px 0;
+    text-align: left;
+
+    @include responsive-large {
+      gap: 30px;
+    }
+
+    @include responsive-medium {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      grid-template-rows: repeat(2, 1fr);
+      max-width: 500px;
+      margin: 20px auto;
+    }
+  }
+
+  .line-break {
+    width: 100%;
+    margin: 30px 0;
+  }
+
+  .content__image {
+    width: 100%;
+    border-radius: 15px;
+    background-position: 20%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      background-image: linear-gradient(45deg, $primary-color, $primary-dark);
+      opacity: 0.4;
+    }
+  }
+
+  .content__info {
+    @include flex(flex-start, flex-start);
+    padding: 20px 0;
+    flex-direction: column;
+
+    &-title {
+      font-size: 34px;
+      line-height: 42px;
+      font-weight: 600;
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      font-size: 20px;
+
+      span {
+        color: $primary-color;
+      }
+    }
+
+    &-desc {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-grey;
+      margin-top: 5px;
+    }
+  }
+
+  .content-info__section {
+    width: 100%;
+
+    &-top {
+      @include flex(flex-start, flex-start);
+      gap: 10px;
+      flex-direction: column;
+    }
+
+    &-title {
+      font-size: 23px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    &-bottom {
+      div {
+        @include grid(0, space-between);
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        margin-top: 15px;
+
+        li {
+          padding: 6px 0;
+          font-weight: 500;
+
+          a {
+            color: $primary-dark;
+            text-decoration: underline;
+          }
+
+          span {
+            color: $dark-grey;
+            text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+
+  .skills-container {
+    .skills-container__title {
+      font-size: 34px;
+      line-height: 42px;
+      font-weight: 700;
+
+      @include responsive-medium {
+        font-size: 30px;
+      }
+    }
+
+    .skills-list {
+      @include flex(center);
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+
+      @include responsive-medium {
+        column-gap: 8px;
+      }
+
+      &__item {
+        padding: 0 5px;
+        border-radius: 5px;
+        display: inline-block;
+        cursor: pointer;
+
+        &:hover {
+          transform: translateY(-8px);
+        }
+      }
+
+      .skill-image {
+        width: 75px;
+        height: 75px;
+
+        @include responsive-medium {
+          width: 65px;
+          height: 65px;
+        }
+      }
+    }
+  }
+}

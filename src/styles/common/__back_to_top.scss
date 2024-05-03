@@ -1,0 +1,25 @@
+.back-to-top {
+  transform: translateX(100px);
+
+  &__active {
+    transform: translateX(0);
+  }
+
+  @include flex(center, center);
+  cursor: pointer;
+  width: 42px;
+  height: 42px;
+  border: 2px solid $primary-color;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 25px;
+  right: 30px;
+  background-color: $primary-color;
+  color: $white;
+  transition: $global-transition;
+  font-size: 15px;
+
+  &:hover {
+    transform: translateY(-8px);
+  }
+}

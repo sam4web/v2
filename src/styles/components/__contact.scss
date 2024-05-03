@@ -1,0 +1,144 @@
+.contact {
+  @include parallex-bg(#f5f5f599, '../assets/hero-bg.svg');
+
+  .section-container {
+    max-width: 1350px;
+    @include grid(45px);
+    grid-template-columns: 0.7fr 1fr;
+
+    @include responsive(0, 978px) {
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .content-container {
+    max-width: 470px;
+
+    .section-title {
+      font-size: 56px;
+      line-height: 64px;
+      margin-bottom: 35px;
+
+      @include responsive-medium {
+        font-size: 46px;
+        line-height: 54px;
+        margin-bottom: 25px;
+      }
+    }
+
+    .section-desc {
+      margin-bottom: 50px;
+
+      @include responsive-medium {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .contact-list {
+    @include flex(start, start);
+    flex-direction: column;
+    gap: 25px;
+
+    @include responsive-medium {
+      gap: 15px;
+    }
+
+    li {
+      @include flex;
+      gap: 14px;
+
+      svg {
+        color: $primary-color;
+        font-size: 28px;
+      }
+
+      a {
+        text-decoration: underline;
+      }
+
+      span,
+      a {
+        color: $primary-dark;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .form-container {
+    background-color: $white;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    padding: 35px;
+
+    @include responsive-medium {
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+
+  .input-container__row {
+    @include flex;
+    gap: 25px;
+
+    @include responsive-small {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .input-container {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: left;
+  }
+
+  label {
+    font-size: 15px;
+    font-weight: 600;
+    color: $dark-grey;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+
+  input:not([type='submit']),
+  textarea {
+    cursor: text;
+    display: block;
+    width: 100%;
+    background-color: #f0f0f0;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    outline: none;
+    transition: $global-transition;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: inherit;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+
+    @include responsive-small {
+      @include assign-value(padding-top padding-bottom, 10px);
+    }
+
+    &::placeholder {
+      transition: inherit;
+    }
+
+    &:focus {
+      border-color: $primary-color;
+      background-color: $white;
+
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 250px;
+  }
+}

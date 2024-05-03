@@ -1,0 +1,309 @@
+{
+  "socialInfo": [
+    {
+      "id": 1,
+      "title": "facebook",
+      "icon": "FacebookIcon",
+      "url": "https://www.facebook.com/"
+    },
+    {
+      "id": 2,
+      "title": "instagram",
+      "icon": "InstagramIcon",
+      "url": "https://www.instagram.com/"
+    },
+    {
+      "id": 3,
+      "title": "github",
+      "icon": "GithubIcon",
+      "url": "https://github.com/sam4web/"
+    },
+    {
+      "id": 4,
+      "title": "twitter",
+      "icon": "TwitterIcon",
+      "url": "https://twitter.com/"
+    },
+    {
+      "id": 5,
+      "title": "linkedin",
+      "icon": "LinkedinIcon",
+      "url": "https://linkedin.com/"
+    }
+  ],
+
+  "personalInfo": [
+    {
+      "id": 1,
+      "title": "name",
+      "detail": "Sijal Manandhar"
+    },
+    {
+      "id": 2,
+      "title": "age",
+      "detail": "19 Years"
+    },
+    {
+      "id": 3,
+      "title": "nationality",
+      "detail": "Nepal"
+    },
+    {
+      "id": 4,
+      "title": "freelance",
+      "detail": "Available"
+    },
+    {
+      "id": 5,
+      "title": "address",
+      "detail": "Kalanki, Kathmandu"
+    },
+    {
+      "id": 6,
+      "title": "phone",
+      "detail": "+977 9860334526",
+      "href": "tel:+9779860334526"
+    },
+    {
+      "id": 7,
+      "title": "email",
+      "detail": "sijal.m06@gmail.com",
+      "href": "mailto:sijal.m06@gmail.com"
+    },
+    {
+      "id": 8,
+      "title": "languages",
+      "detail": "English, Nepali"
+    }
+  ],
+
+  "skills": [
+    {
+      "id": 1,
+      "title": "html",
+      "redirect_url": "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      "image_url": "https://img.icons8.com/color/96/html-5--v1.png"
+    },
+    {
+      "id": 2,
+      "title": "css",
+      "redirect_url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "image_url": "https://img.icons8.com/color/96/css3.png"
+    },
+    {
+      "id": 3,
+      "title": "javascript",
+      "redirect_url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      "image_url": "https://img.icons8.com/color/96/javascript--v1.png"
+    },
+    {
+      "id": 4,
+      "title": "tailwindcss",
+      "redirect_url": "https://tailwindcss.com/",
+      "image_url": "https://img.icons8.com/color/96/tailwind_css.png"
+    },
+    {
+      "id": 5,
+      "title": "react",
+      "redirect_url": "https://react.dev/",
+      "image_url": "https://img.icons8.com/color/96/react-native.png"
+    },
+    {
+      "id": 6,
+      "title": "vue",
+      "redirect_url": "https://vuejs.org/",
+      "image_url": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/96/external-vuejs-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-applications-logo-color-tal-revivo.png      "
+    },
+    {
+      "id": 7,
+      "title": "python",
+      "redirect_url": "https://python.org",
+      "image_url": "https://img.icons8.com/color/96/python--v1.png"
+    },
+    {
+      "id": 8,
+      "title": "django",
+      "redirect_url": "https://www.djangoproject.com/",
+      "image_url": "https://img.icons8.com/color/96/django.png"
+    },
+    {
+      "id": 9,
+      "title": "nodejs",
+      "redirect_url": "https://nodejs.org/en/",
+      "image_url": "https://img.icons8.com/color/96/nodejs.png"
+    },
+    {
+      "id": 10,
+      "title": "expressjs",
+      "redirect_url": "https://expressjs.com/",
+      "image_url": "https://img.icons8.com/color/96/express-js.png"
+    },
+    {
+      "id": 11,
+      "title": "mysql",
+      "redirect_url": "https://www.mysql.com/",
+      "image_url": "https://img.icons8.com/color/96/mysql-logo.png"
+    },
+    {
+      "id": 12,
+      "title": "firebase",
+      "redirect_url": "https://firebase.google.com/",
+      "image_url": "https://img.icons8.com/color/96/firebase.png"
+    },
+    {
+      "id": 13,
+      "title": "git",
+      "redirect_url": "https://git-scm.com/",
+      "image_url": "https://img.icons8.com/color/96/git.png"
+    }
+  ],
+
+  "contactAddress": [
+    {
+      "id": 0,
+      "title": "phone",
+      "info": "+977 9860334526",
+      "href": "tel:+9779860334526",
+      "icon": "PhoneIcon"
+    },
+    {
+      "id": 1,
+      "title": "email",
+      "info": "sijal.m06@gmail.com",
+      "href": "mailto:sijal.m06@gmail.com",
+      "icon": "MailIcon"
+    },
+    {
+      "id": 2,
+      "title": "location",
+      "info": "Kalanki, Kathmandu, Nepal",
+      "icon": "LocationIcon"
+    }
+  ],
+
+  "projectTags": ["html & css", "react", "django"],
+
+  "projectList": [
+    {
+      "id": 1,
+      "name": "xolcy",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/xolcy-template",
+      "livePreview": "https://sam4web.github.io/xolcy-template/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/xolcy-template/main/project-preview.png"
+    },
+    {
+      "id": 2,
+      "name": "socialated",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/socialated-template",
+      "livePreview": "https://sam4web.github.io/socialated-template/",
+      "imageLink": "https://github.com/sam4web/socialated-template/raw/main/project-preview.png"
+    },
+    {
+      "id": 11,
+      "name": "react chat application",
+      "tags": ["react"],
+      "sourceCode": "https://github.com/sam4web/react-chat",
+      "livePreview": "https://react-chat-sam4web.vercel.app/",
+      "imageLink": "https://github.com/sam4web/react-chat/raw/main/preview.png"
+    },
+    {
+      "id": 7,
+      "name": "newsletter signup form",
+      "tags": ["react", "tailwindcss"],
+      "sourceCode": "https://github.com/sam4web/newsletter_signup_form",
+      "livePreview": "https://sam4web.github.io/newsletter_signup_form/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/newsletter_signup_form/main/screenshot.png"
+    },
+    {
+      "id": 3,
+      "name": "monst",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/monst-template",
+      "livePreview": "https://sam4web.github.io/monst-template/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/monst-template/main/project-preview.png"
+    },
+    {
+      "id": 4,
+      "name": "luaz",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/luaz-template",
+      "livePreview": "https://sam4web.github.io/luaz-template/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/luaz-template/main/project-preview.png"
+    },
+    {
+      "id": 5,
+      "name": "hously",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/hously-template",
+      "livePreview": "https://sam4web.github.io/hously-template/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/hously-template/main/project-preview.png"
+    },
+    {
+      "id": 6,
+      "name": "truelead",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/truelead-template",
+      "livePreview": "https://sam4web.github.io/truelead-template/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/truelead-template/main/page-preview.png"
+    },
+
+    {
+      "id": 8,
+      "name": "intro signup form",
+      "tags": ["vue", "tailwindcss"],
+      "sourceCode": "https://github.com/sam4web/intro_signup_form_component",
+      "livePreview": "https://sam4web.github.io/intro_signup_form_component/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/intro_signup_form_component/main/screenshot.png"
+    },
+    {
+      "id": 9,
+      "name": "result summary",
+      "tags": ["html & css", "tailwindcss"],
+      "sourceCode": "https://github.com/sam4web/results_summary_component",
+      "livePreview": "https://sam4web.github.io/results_summary_component/",
+      "imageLink": "https://raw.githubusercontent.com/sam4web/results_summary_component/main/screenshot.png"
+    },
+    {
+      "id": 10,
+      "name": "meat shop",
+      "tags": ["html & css"],
+      "sourceCode": "https://github.com/sam4web/meat-shop",
+      "livePreview": "https://sam4web.github.io/meat-shop/",
+      "imageLink": "https://github.com/sam4web/meat-shop/blob/main/page-preview.png?raw=true"
+    },
+    {
+      "id": 12,
+      "name": "django notes app",
+      "tags": ["django"],
+      "sourceCode": "https://github.com/sam4web/django-notes-app",
+      "imageLink": "https://github.com/sam4web/django-notes-app/raw/main/preview-01.png"
+    },
+    {
+      "id": 13,
+      "name": "django CRM",
+      "tags": ["django"],
+      "sourceCode": "https://github.com/sam4web/DjangoCRM",
+      "imageLink": "https://github.com/sam4web/DjangoCRM/raw/main/preview-img.png"
+    }
+  ],
+
+  "services": [
+    {
+      "id": 0,
+      "title": "Web Development",
+      "description": "I possess the expertise to craft tailored, user-friendly websites, personalized to your needs. It would be my honor to assist you in building your online presence."
+    },
+    {
+      "id": 1,
+      "title": "UI/UX Design",
+      "description": "I am capable of providing meticulous UI/UX design services for your esteemed project. It would be my privilege to enhance your user experience with thoughtful and creative design solutions."
+    },
+    {
+      "id": 2,
+      "title": "Programming",
+      "description": "I am skilled in programming and software development, ready to serve your needs diligently. It would be my honor to contribute to your project with my expertise."
+    }
+  ]
+}

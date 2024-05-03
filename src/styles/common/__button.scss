@@ -1,0 +1,43 @@
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: $primary-color;
+  padding: 15px 40px;
+  border-radius: 5px;
+  border: 2px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: $global-transition;
+
+  @include responsive-medium {
+    padding: 15px 30px;
+  }
+
+  &,
+  a {
+    color: $white;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+
+    @include responsive-medium {
+      font-size: 18px;
+    }
+  }
+
+  &:hover,
+  &-transparent {
+    border-color: $primary-color;
+    background-color: #ffffff80;
+    transform: translateY(-8px);
+
+    &,
+    a {
+      color: $primary-color;
+    }
+  }
+
+  &-transparent {
+    transform: translateY(0);
+  }
+}

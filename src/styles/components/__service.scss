@@ -1,0 +1,44 @@
+.service {
+  .service-container {
+    margin: 50px 0;
+    @include grid(34px);
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+
+    @include responsive-medium {
+      margin: 20px auto;
+    }
+  }
+
+  .service-item {
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+      rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    background-color: $section-grey;
+    padding: 25px;
+    @include flex(start, start);
+    flex-direction: column;
+    gap: 13px;
+
+    &__idx {
+      font-size: 32px;
+      background-color: $primary-color;
+      color: $white;
+      @include assign-value(width height, 58px);
+      @include flex(center, center);
+      border-radius: 10px;
+      margin-bottom: 7px;
+    }
+
+    &__title {
+      font-size: 28px;
+      line-height: 36px;
+      color: $primary-dark;
+    }
+
+    &__description {
+      font-size: 16px;
+      line-height: 24px;
+      color: $dark-grey;
+    }
+  }
+}

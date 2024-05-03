@@ -1,0 +1,84 @@
+.section-container {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 70px 20px;
+
+  @include responsive-medium {
+    padding: 45px 15px;
+  }
+
+  &:hover .section-subtitle {
+    font-weight: 600;
+
+    &::after {
+      width: 60px;
+    }
+  }
+
+  .section-subtitle {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    color: $primary-color;
+    font-size: 18px;
+    line-height: 25px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 50%;
+      transform: translateY(50%);
+      width: 45px;
+      margin-left: 20px;
+      height: 2px;
+      border-radius: 40px;
+      background-color: $primary-color;
+      transition: $global-transition;
+    }
+  }
+
+  .section-title {
+    margin: 20px 0;
+    font-size: 52px;
+    line-height: 64px;
+    font-weight: 700;
+    max-width: 600px;
+
+    @include responsive-large {
+      font-size: 46px;
+      line-height: 56px;
+    }
+
+    @include responsive-medium {
+      font-size: 30px;
+      line-height: 38px;
+    }
+  }
+
+  .section-desc {
+    max-width: 650px;
+    width: 100%;
+    color: $dark-grey;
+
+    @include responsive-medium {
+      max-width: 450px;
+    }
+  }
+}
+
+.social-icons {
+  @include flex(flex-start);
+  gap: 15px;
+  margin-top: 10px;
+
+  li a {
+    color: $dark-grey;
+    font-size: 23px;
+    display: inline-block;
+
+    &:hover {
+      color: $primary-color;
+      transform: translateY(-5px);
+    }
+  }
+}

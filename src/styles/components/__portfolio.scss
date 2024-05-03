@@ -1,0 +1,148 @@
+.portfolio {
+  background-color: $section-grey;
+
+  .content-container {
+    margin: 50px 0;
+
+    @include responsive-large {
+    }
+
+    @include responsive-medium {
+      margin: 20px auto;
+    }
+  }
+
+  .project-tag__list {
+    @include flex(start);
+    column-gap: 25px;
+    row-gap: 10px;
+
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+
+    @include responsive-medium {
+      margin-bottom: 20px;
+      column-gap: 15px;
+    }
+
+    .project-tag__item {
+      color: $dark-grey;
+      cursor: pointer;
+      text-transform: capitalize;
+
+      &:hover {
+        font-weight: 500;
+      }
+
+      &.tag-active {
+        color: $primary-color;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .project-container {
+    @include grid(25px);
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+
+  .project-item {
+    max-width: 500px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+      .project-item__link-list {
+        display: flex;
+      }
+
+      .project-item__image {
+        img {
+          scale: 1.3;
+        }
+        &::before {
+          opacity: 0.9;
+        }
+      }
+
+      .project-item__title {
+        &::after,
+        &::before {
+          margin: 0 7px;
+          color: $primary-color;
+        }
+      }
+    }
+
+    &__image {
+      width: 100%;
+      border-radius: 10px;
+      position: relative;
+      margin-bottom: 10px;
+      overflow: hidden;
+
+      img {
+        border-radius: 10px;
+        height: 100%;
+        transition: scale 200ms linear;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        inset: 0;
+        background-color: $primary-dark;
+        opacity: 0;
+        transition: inherit;
+        z-index: 10;
+      }
+    }
+
+    &__title {
+      text-transform: capitalize;
+      font-size: 21px;
+      line-height: 29px;
+      font-weight: 400;
+
+      &::after,
+      &::before {
+        margin: 0;
+        transition: inherit;
+      }
+
+      &::before {
+        content: '<';
+      }
+      &::after {
+        content: '/>';
+      }
+    }
+
+    &__link-list {
+      display: none;
+      position: absolute;
+      bottom: 55px;
+      left: 20px;
+      gap: 10px;
+      z-index: 20;
+    }
+
+    &__link-item a {
+      color: $white;
+      font-size: 24px;
+      @include flex(center, center);
+      @include assign-value(width height, 35px);
+      border-radius: 40px;
+
+      &:hover {
+        color: $primary-dark;
+        background-color: $white;
+      }
+    }
+  }
+}

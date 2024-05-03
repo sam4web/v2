@@ -1,0 +1,62 @@
+$global-transition: 100ms color linear, 200ms background-color ease-in-out,
+  150ms width linear, 200ms border-color linear, transform 200ms linear,
+  margin 220ms linear, 150ms opacity linear, font-weight 150ms linear;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: $global-transition;
+
+  &::selection {
+    background-color: $primary-color;
+    color: $white;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+  color: $primary-dark;
+}
+
+body {
+  width: 100%;
+  height: 200vh;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Poppins', sans-serif;
+
+  @include responsive-medium {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+
+  i {
+    cursor: pointer;
+  }
+}
