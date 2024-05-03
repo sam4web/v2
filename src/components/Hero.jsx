@@ -1,5 +1,6 @@
 import { TypeAnimation } from 'react-type-animation';
 import { FaChevronDown } from 'react-icons/fa6';
+import { resume } from '../assets';
 import { Link } from 'react-scroll';
 
 const Hero = () => {
@@ -22,7 +23,7 @@ const Hero = () => {
         </p>
 
         <button className='btn'>
-          <a href={'/resume2023.pdf'} target='_blank' rel='noreferrer'>
+          <a href={resume} target='_blank' rel='noreferrer'>
             View Resume
           </a>
         </button>
