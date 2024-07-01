@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'v2',
+  base: '/portfolio-v2/',
   plugins: [react()],
   server: {
     http: 'http://localhost',

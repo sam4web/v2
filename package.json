@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/sam4web/v2",
   "name": "personal-portfolio",
+  "homepage": "https://github.com/sam4web/portfolio-v2",
   "private": true,
   "version": "0.0.0",
   "type": "module",
