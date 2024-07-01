@@ -26,5 +26,5 @@ The website is deployed on GitHub Pages. Pushes to the main branch are automatic
 
 If you have any questions or want to get in touch, feel free to contact me via the following channels:
 
-Github: [@sam4web](https://github.com/sam4web)
-Email: [sijal.m06@gmail.com](mailto:sijal.m06@gmail.com)
+- Github: [@sam4web](https://github.com/sam4web)
+- Email: [sijal.m06@gmail.com](mailto:sijal.m06@gmail.com)
